@@ -2,6 +2,10 @@ package com.dsa.assignment;
 
 /**
  * Created by vikas.e.mishra on 8/11/2017.
+ *
+ * complexity - nlogn
+ * Why quick sort is used instead of merge sort. Because merge sort takes extra space
+ *
  */
 public class QuickSort {
 
@@ -36,7 +40,7 @@ public class QuickSort {
     }
 
     public static int partition(int[] listToSort, int low, int high) {
-        int pivot = listToSort[low];
+        int pivot = listToSort[low]; // first index is pivot
         int l = low;
         int h = high;
         while (l < h) {
